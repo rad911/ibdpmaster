@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ibdpcommons" />
+        <module name="ibdpeureka" />
+        <module name="ibdpprovideralgorithm" />
+        <module name="ibdpprovideranalysis" />
+        <module name="ibdpproviderapi" />
+        <module name="ibdpproviderdata" />
+        <module name="ibdpprovidermodel" />
+        <module name="ibdpprovidernotification" />
+        <module name="ibdpprovidersolution" />
+        <module name="ibdpprovideruser" />
+        <module name="ibdpprovidervisualization" />
+        <module name="ibdpzuul" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ibdp-provider-algorithm" target="1.5" />
+      <module name="ibdp-provider-model" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

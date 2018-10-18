@@ -1,0 +1,12 @@
+server:
+  port: 8006
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+
+spring:
+  application:
+    name: ibdp-user
+

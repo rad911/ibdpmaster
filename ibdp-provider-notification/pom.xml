@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>ibdp-master</artifactId>
+        <groupId>com.sdu.ibdp</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>ibdp-provider-notification</artifactId>
+
+    <dependencies>
+        <!-- eureka的客户端依赖 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
+        </dependency>
+
+        <!--config的客户端依赖-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+
+
+        <!-- 修改后立即生效，热部署(开始) -->
+        <!--在平时编写代码的时候，
+            你会发现我们只是简单把打印信息改变了，
+            就需要重新部署，
+            如果要改变这样的方式，就需要用到热部署springloaded-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>springloaded</artifactId>
+        </dependency>
+
+        <!--spring-boot-devtools 是一个为开发者服务的一个模块，
+        其中最重要的功能就是自动应用代码更改到最新的App上面去。-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+        </dependency>
+        <!--修改后立即生效，热部署(结束) -->
+
+    </dependencies>
+</project>
