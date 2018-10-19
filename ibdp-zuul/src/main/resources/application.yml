@@ -5,3 +5,34 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka
+  instance:
+    instance-id: ibdp-zuul
+    prefer-ip-address: true
+
+spring:
+  application:
+    name: ibdp-zuul
+
+info:
+  app.name: ibdp
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+
+zuul:
+  prefix: /ibdp
+  ignored-services: "*"
+  routes:
+      ibdp-analysis:
+        path: /analysis/**
+      ibdp-api:
+        path: /api/**
+      ibdp-data:
+        path: /data/**
+      ibdp-notification:
+        path: /notification/**
+      ibdp-solution:
+        path: /solution/**
+      ibdp-user:
+        path: /user/**
+      ibdp-visualization:
+        path: /visualization/**
