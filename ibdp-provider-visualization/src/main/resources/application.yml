@@ -2,8 +2,16 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka
+  instance:
+    instance-id: ibdp-visualization
+    prefer-ip-address: true
 spring:
   application:
     name: ibdp-visualization
 server:
   port: 8007
+
+info:
+  app.name: ibdp
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$

@@ -3,8 +3,16 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka
+  instance:
+    instance-id: ibdp-notification
+    prefer-ip-address: true
 spring:
   application:
     name: ibdp-notification
 server:
   port: 8004
+
+info:
+  app.name: ibdp
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$

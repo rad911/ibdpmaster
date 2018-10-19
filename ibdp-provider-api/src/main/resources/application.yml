@@ -4,7 +4,17 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka
+  instance:
+    prefer-ip-address: true #打开ip的前缀
+    instance-id: ibdp-api
+
 spring:
   application:
     name: ibdp-api
+
+info:
+  app.name: ibdp
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+
 
