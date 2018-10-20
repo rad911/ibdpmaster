@@ -4,3 +4,7 @@ ibdp
 下面是监控页面。
 
 ![image](ibdp-doc/image/QQ截图20181018215318.png)
+
+命名规范:
+
+![image](ibdp-doc/image/QQ截图20181016205730.png)
