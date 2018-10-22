@@ -6,18 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ibdpcommons" />
-        <module name="ibdpeureka" />
-        <module name="ibdpprovideralgorithm" />
-        <module name="ibdpprovideranalysis" />
-        <module name="ibdpproviderapi" />
-        <module name="ibdpproviderdata" />
-        <module name="ibdpprovidermodel" />
-        <module name="ibdpprovidernotification" />
-        <module name="ibdpprovidersolution" />
-        <module name="ibdpprovideruser" />
-        <module name="ibdpprovidervisualization" />
-        <module name="ibdpzuul" />
+        <module name="ibdp-commons" />
+        <module name="ibdp-eureka" />
+        <module name="ibdp-provider-analysis" />
+        <module name="ibdp-provider-api" />
+        <module name="ibdp-provider-data" />
+        <module name="ibdp-provider-notification" />
+        <module name="ibdp-provider-solution" />
+        <module name="ibdp-provider-user" />
+        <module name="ibdp-provider-visualization" />
+        <module name="ibdp-zuul" />
       </profile>
     </annotationProcessing>
   </component>

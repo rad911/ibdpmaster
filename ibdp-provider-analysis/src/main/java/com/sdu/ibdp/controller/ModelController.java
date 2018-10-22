@@ -19,6 +19,7 @@ public class ModelController {
     @ApiOperation("查询接口")
     @RequestMapping(value = "/{id}",method = RequestMethod.GET)
     public Model getModelById(@PathVariable("id") Integer id){
+        System.out.println("111");
        return modelService.findById(id);
     }
 }
