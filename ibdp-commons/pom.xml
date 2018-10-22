@@ -11,5 +11,37 @@
 
     <artifactId>ibdp-commons</artifactId>
 
+    <properties>
+        <!--依赖包版本号-->
+        <swagger.version>2.4.0</swagger.version>
+    </properties>
 
+    <dependencies>
+        <!-- Swagger开始 -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-staticdocs</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+        <!-- Swagger结束 -->
+
+        <!--引入lombok-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.18</version>
+        </dependency>
+    </dependencies>
 </project>

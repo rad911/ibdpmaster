@@ -20,9 +20,5 @@
         <module name="ibdpzuul" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="ibdp-provider-algorithm" target="1.5" />
-      <module name="ibdp-provider-model" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
 </project>
