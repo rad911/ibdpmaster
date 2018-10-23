@@ -18,5 +18,18 @@
         <module name="ibdp-zuul" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ibdp-commons" target="1.5" />
+      <module name="ibdp-eureka" target="1.5" />
+      <module name="ibdp-master" target="1.5" />
+      <module name="ibdp-provider-analysis" target="1.5" />
+      <module name="ibdp-provider-api" target="1.5" />
+      <module name="ibdp-provider-data" target="1.5" />
+      <module name="ibdp-provider-notification" target="1.5" />
+      <module name="ibdp-provider-solution" target="1.5" />
+      <module name="ibdp-provider-user" target="1.5" />
+      <module name="ibdp-provider-visualization" target="1.5" />
+      <module name="ibdp-zuul" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
