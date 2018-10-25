@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -21,7 +22,6 @@
     <bytecodeTargetLevel>
       <module name="ibdp-commons" target="1.5" />
       <module name="ibdp-eureka" target="1.5" />
-      <module name="ibdp-master" target="1.5" />
       <module name="ibdp-provider-analysis" target="1.5" />
       <module name="ibdp-provider-api" target="1.5" />
       <module name="ibdp-provider-data" target="1.5" />
