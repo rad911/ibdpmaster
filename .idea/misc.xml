@@ -7,6 +7,20 @@
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/ibdp-commons/pom.xml" />
+        <option value="$PROJECT_DIR$/ibdp-eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/ibdp-provider-analysis/pom.xml" />
+        <option value="$PROJECT_DIR$/ibdp-provider-api/pom.xml" />
+        <option value="$PROJECT_DIR$/ibdp-provider-data/pom.xml" />
+        <option value="$PROJECT_DIR$/ibdp-provider-notification/pom.xml" />
+        <option value="$PROJECT_DIR$/ibdp-provider-solution/pom.xml" />
+        <option value="$PROJECT_DIR$/ibdp-provider-user/pom.xml" />
+        <option value="$PROJECT_DIR$/ibdp-provider-visualization/pom.xml" />
+        <option value="$PROJECT_DIR$/ibdp-zuul/pom.xml" />
+      </set>
+    </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
