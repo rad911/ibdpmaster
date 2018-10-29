@@ -33,6 +33,8 @@ public class Model {
     @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     @ApiModelProperty(name="createTime",value = "创建时间",example = "2018-10-25 16:50:10")
     private Date createTime;
+
+
     @ApiModelProperty(name="type",value = "模型类型",example = "供暖模型")
     private String type;
     @ApiModelProperty(name="used",value="被使用数",hidden =true)
