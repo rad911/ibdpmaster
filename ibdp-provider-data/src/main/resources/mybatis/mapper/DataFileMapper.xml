@@ -11,6 +11,6 @@
             select uuid();
         </selectKey>
         insert into datafile(id,name,size,type,suffix,createTime,localPath,HDFSPath,hasHeader)
-        value (#{id},#{name},#{size},#{type},#{suffix},#{createTime},#{localPath},#{HDFSPath},#{hasHeader});
+        value (#{id},#{name},#{size},#{type},#{suffix},#{createTime},#{localPath},#{hdfsPath},#{hasHeader});
     </insert>
 </mapper>

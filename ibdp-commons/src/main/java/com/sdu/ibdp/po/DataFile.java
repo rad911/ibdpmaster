@@ -17,8 +17,14 @@ import java.util.Date;
 @NoArgsConstructor
 @Accessors(chain=true)
 public class DataFile {
-    @ApiModelProperty(name = "id",value = "数据文件的id",hidden = true)
+    @ApiModelProperty(name = "id",hidden = true)
     private String id;
+
+    @ApiModelProperty(hidden = true)
+    private String localPath;
+
+    @ApiModelProperty(hidden = true)
+    private String hdfsPath;
 
     @ApiModelProperty(name = "name",value = "数据文件的名字",example = "文件1")
     private String name;
@@ -37,13 +43,7 @@ public class DataFile {
     @ApiModelProperty(name = "createTime",value = "数据文件的创建时间",example = "2018-10-26 19:55:00")
     private Date createTime;
 
-
-    @ApiModelProperty(name = "localPath",value = "数据文件的本地路径",hidden = true)
-    private String localPath;
-
-    @ApiModelProperty(name = "HDFSPath",value = "数据文件的HDFS路径",hidden = true)
-    private String HDFSPath;
-
     @ApiModelProperty(name = "hasHead",value = "数据文件是否包含表头(0代表无)",example = "1")
     private int hasHeader;
+
 }

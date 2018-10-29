@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
 @Api(tags="DataFile的接口(数据文件)")
 @RestController
@@ -29,5 +30,11 @@ public class DataFileController {
     @RequestMapping(value = "/DataFile",method = RequestMethod.POST)
     public int addDataFile(@ApiParam(name="dataFile",value = "dataFile(json对象)",required = true)@RequestBody DataFile dataFile){
         return dataFileService.addDataFile(dataFile);
+    }
+
+    @ApiOperation("文件上传的接口(File)")
+    @RequestMapping(value="/File",method = RequestMethod.POST)
+    public void uploadFile(@ApiParam(name = "file",value = "文件",required = true) MultipartFile file){
+
     }
 }
