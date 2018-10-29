@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sdu.ibdp.mapper.DataFileMapper">
+    <select id="getDataFileById" parameterType="java.lang.String" resultType="com.sdu.ibdp.po.DataFile" >
+        select * from datafile where id = #{id};
+    </select>
+
+    <insert id="addDataFile" parameterType="com.sdu.ibdp.po.DataFile">
+        <selectKey keyProperty="id" order="BEFORE" resultType="java.lang.String">
+            select uuid();
+        </selectKey>
+        insert into datafile(id,name,size,type,suffix,createTime,localPath,HDFSPath,hasHeader)
+        value (#{id},#{name},#{size},#{type},#{suffix},#{createTime},#{localPath},#{HDFSPath},#{hasHeader});
+    </insert>
+</mapper>

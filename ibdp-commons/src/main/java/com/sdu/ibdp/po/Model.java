@@ -7,10 +7,10 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
+
 
 @ApiModel(value="Model对象",description = "模型")
 @Data
@@ -21,17 +21,17 @@ import java.util.Date;
 public class Model {
     //Model的id
     @ApiModelProperty(name="id",value = "模型id",hidden = true)
-    private Integer id;
+    private String  id;
     @ApiModelProperty(name="name",value = "模型名字",example = "模型一")
     private String name;
     @ApiModelProperty(name="description",value = "模型描述",example = "模型一的描述")
     private String description;
 
     //一般前台给后台传值时用
-    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss") //格式化前台日期参数注解
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss") //格式化前台日期参数注解*/
     //将Date转换成String  一般后台传值给前台时
     @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
-    @ApiModelProperty(name="createTime",value = "创建时间",example = "2018-10-25 16:50:10")
+    @ApiModelProperty(name="createTime",value = "创建时间",example = "2018-10-26 16:22:00")
     private Date createTime;
     @ApiModelProperty(name="type",value = "模型类型",example = "供暖模型")
     private String type;
