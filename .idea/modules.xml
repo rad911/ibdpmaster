@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ibdp-commons/ibdp-commons.iml" filepath="$PROJECT_DIR$/ibdp-commons/ibdp-commons.iml" />
       <module fileurl="file://$PROJECT_DIR$/ibdp-eureka/ibdp-eureka.iml" filepath="$PROJECT_DIR$/ibdp-eureka/ibdp-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ibdp-master.iml" filepath="$PROJECT_DIR$/ibdp-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/ibdp-provider-analysis/ibdp-provider-analysis.iml" filepath="$PROJECT_DIR$/ibdp-provider-analysis/ibdp-provider-analysis.iml" />
       <module fileurl="file://$PROJECT_DIR$/ibdp-provider-api/ibdp-provider-api.iml" filepath="$PROJECT_DIR$/ibdp-provider-api/ibdp-provider-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/ibdp-provider-data/ibdp-provider-data.iml" filepath="$PROJECT_DIR$/ibdp-provider-data/ibdp-provider-data.iml" />
