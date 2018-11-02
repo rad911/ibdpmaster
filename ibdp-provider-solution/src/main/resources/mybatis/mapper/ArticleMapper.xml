@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sdu.ibdp.mapper.ArticleMapper">
+
+    <insert id="insertArticle" parameterType="com.sdu.ibdp.po.Article">
+        <selectKey keyProperty="id" order="BEFORE" resultType="java.lang.String">
+            select uuid();
+        </selectKey>
+        INSERT INTO article(id,title,summary,releaseDate,content,keyWord)
+        VALUES (#{id},#{title},#{summary},#{releaseDate},#{content},#{keyWord})
+    </insert>
+
+    <select id="getArticleList" resultType="com.sdu.ibdp.po.Article">
+        SELECT * FROM article
+    </select>
+
+    <select id="getArticleById" parameterType="java.lang.String" resultType="com.sdu.ibdp.po.Article">
+        SELECT  * FROM article WHERE id=#{id};
+    </select>
+
+    <update id="updateArticle" parameterType="com.sdu.ibdp.po.Article">
+        UPDATE article SET title=#{title},content=#{content},summary=#{summary},releaseDate=#{releaseDate},
+        keyWord=#{keyWord} WHERE id=#{id};
+    </update>
+
+    <delete id="deleteArticle" parameterType="java.lang.String">
+        DELETE FROM article WHERE id=#{id};
+    </delete>
+</mapper>
