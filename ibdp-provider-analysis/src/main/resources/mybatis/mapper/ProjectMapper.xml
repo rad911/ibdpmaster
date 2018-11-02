@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sdu.ibdp.mapper.ProjectMapper">
+    <!--增加一个项目-->
+
+    <insert id="insertProject" parameterType="com.sdu.ibdp.po.Project">
+        <selectKey keyProperty="id" order="BEFORE" resultType="String">
+            select uuid()
+        </selectKey>
+        INSERT INTO project(id,name,createTime,description) value(#{id},#{name},#{createTime},#{description})
+    </insert>
+    <!-- 删除一个项目 -->
+    <delete id="deleteProjectById"  parameterType="String">
+    	DELETE FROM project where id = #{id}
+    </delete>
+    <select id="selectProjectById" parameterType= "String"  resultType="com.sdu.ibdp.po.Project">
+    	SELECT * FROM project WHERE id = #{id}
+    </select>
+    
+   		<update id="updateProject"  parameterType="com.sdu.ibdp.po.Project"  >
+			 update project set
+                name= #{name},createTime=#{createTime},description=#{description}
+                where id = #{id}
+		</update>
+    
+</mapper>
